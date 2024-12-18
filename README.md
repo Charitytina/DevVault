@@ -1,41 +1,40 @@
-# DevVault
-This is a developer platform designed to reward knowledge sharing and foster collaboration among developers. It combines the functionality of questions and answers with a content sharing hub for updates and best practices. 
+# Dev Vault
 
-# Overview
-This dapp consists of features in which developers can ask questions, share resources and receive tips in a decentralized and transparent way. Creating a condusive ecosystem where contributions are recognized and incentivized.
+DeVault is a decentralized knowledge-sharing platform designed for developers to share insights, ask questions, and showcase best practices while earning rewards. Built on Hedera, DeVault combines transparency, security, and cost-efficiency to foster collaboration and incentivize contributions within the developer community
 
-# Core features
-1. Contribution category
-   This comprises of Q&A sessions by developers with best responses highlighted. It also includes a space for developers to share updates and other information like frameeworks and industry trends.
-2. Tipping system
-   Users can tip developers for valuable posts, answers, or comments, allowing contributors to earn rewards directly. Tipping is available for both the original content and any associated comments or answers.
-3. Comments & Discussions
-    Each post (whether a question or an update) supports comments, enabling discussions and additional insights.
-4. Leaderboard & Recognition
-   A leaderboard highlights top contributors based on the tokens received, encouraging active participation and quality contributions
-5. Data Retrieval & Transparency
-   Users can access all Q&A threads and shared resources, they can view all associated comments to get the complete context of discussions.
+# Pre-requisites:
 
- # Value Proposition  
-For Developers: Gain recognition and earn rewards for sharing knowledge, solving problems, and contributing to the community.  
- For Teams & Organizations: A hub to identify top contributors and stay updated on industry trends and best practices.  
-For the Community: Build a vibrant and incentivized ecosystem where collaboration and innovation thrive.
+- Have a GitHub account: https://github.com/
+- Install the HashPack wallet (browser extension): https://www.hashpack.app/
+- Create a Hedera testnet account: https://portal.hedera.com/register
 
-# Vision 
-DevVault aims to become the go-to platform for developers to share, learn, and grow together, creating a sustainable environment where contributions are valued and rewarded.
+# Slides:
 
-# React + Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Vid Chat - vidchat.pdf](./slides/devault.pdf)
 
-Currently, two official plugins are available:
+# Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# react-vite-template
+- clone this repo: `https://github.com/Charitytina/DevVault.git`
+- move to the directory: `cd DevVault`
+- install packages: `npm install`
+- add environment variables: see [Environment Variables](#environment-variables)
+- Start application: `npm run dev`
+- Open the server at: `http://localhost:5173/`
 
-# Technologies used
-Frontend: React, Node.js
+## Environment Variables
 
-Development tools: Vite, HMR, ESLint.
+- Create a `.env` in the root directory of your project.
+- Paste the following in the `.env` file:
 
-Hedera: Hedera smart contract.
+```
+VITE_MY_ACCOUNT_ID=<Your Hedera Account Id>
+VITE_TOPIC_ID=0.0.5237924 # Leave as it is
+VITE_COMMENTS_TOPIC_ID=0.0.5257265 # Leave as it is
+VITE_ANSWERS_TOPIC_ID=0.0.5257270 # Leave as it is
+VITE_TOKEN_ID=0.0.5259190 # Leave as it is
+VITE_MY_PRIVATE_KEY=<Hedera Private key>
+```
+
+# Live Url
+
+You can view this project live at: [Live url](https://dev-vault-seven.vercel.app/)
